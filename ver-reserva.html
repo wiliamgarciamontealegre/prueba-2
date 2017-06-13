@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Titulo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:600" rel="stylesheet">
+</head>
+
+<style type="text/css">
+    .float_right{
+        float: right;
+    }
+    .float_left{
+        float: left;
+    }
+    .letra_numero_de_reservacion{
+        text-align: right;
+        margin-top: 15px;
+    }
+    .letra_numero_de_reservacion p{
+        margin: 0;
+        font-size: 14px;
+        font-family: 'PT Sans', sans-serif;
+        color: #707070;
+    }
+    .letra_reserva_confirmada h6{
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+        font-size: 20px;
+    }
+    .letra_reserva_confirmada h5{
+        font-size: 24px;
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
+        margin-bottom: 20px;
+    }
+    .letra_reserva_confirmada .fa-check-circle{
+        color: green;
+        font-size: 25px !important;
+        margin-top: 10px;
+        margin-right: 20px;
+    }
+    .letra_reserva_confirmada i{
+        font-size:18px;
+        color: green;
+        margin-right: 23px;
+    }
+    .letra_reserva_confirmada{
+        color: #383838;
+    }
+    .letra_reserva_confirmada p{
+        font-size: 14px;
+        font-family: 'PT Sans', sans-serif;
+    }
+    .boton_confirmacion button{
+        width: 100%;
+        background-color: #0898ff;
+        border: 1px solid #0898ff;
+        font-size: 18px;
+        color: #fff;
+        padding: 7px;
+        font-family: 'PT Sans', sans-serif;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+    .imagenes_mapa_hotel{
+        background-size: cover;
+        background-position: center center;
+        height: 180px;
+        background-repeat: no-repeat;
+        margin-bottom: 20px;
+    }
+    .detalles_reservacion h6{
+        font-weight: bold;
+        font-size: 18px;
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 0;
+    }
+    .detalles_reservacion h5{
+        font-size: 18px;
+        font-family: 'PT Sans', sans-serif;
+        color: #0898ff;
+        margin-top: 0;
+    }
+    .detalles_reservacion p{
+        font-family: 'PT Sans', sans-serif;
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    .detalles_reservacion span{
+        color: #707070;
+        font-size: 14px;
+    }
+    .detalles_reservacion button{
+        background-color: #0ab21b;
+        border:none;
+        color: #fff;
+        font-size: 18px;
+        font-family: 'PT Sans', sans-serif;
+        padding: 6px 25px;
+        margin-top: 20px;
+        border-radius: 5px;
+    }
+    .border_bottom_gris{
+        border-bottom:1px solid #ededed;
+        margin: 15px 0;
+    }
+    .letra_especificacion_hotel h3{
+        color: #0898ff;
+        font-size: 26px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .letra_especificacion_hotel p{
+        font-family: 'PT Sans', sans-serif;
+        font-size: 16px;
+    }
+    .fondo_cuadro_azul{
+        background-color: #e9f0fa;
+        border: 1px solid #cce1ff;
+        padding: 25px;
+        margin-top: 30px;
+    }
+    .fondo_cuadro_azul h6{
+        font-weight: bold;
+        font-size: 18px;
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
+        color: #383838;
+    }
+
+    .fondo_cuadro_azul h5{
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 0;
+        font-family: 'Montserrat', sans-serif;
+        color: #383838;
+    }
+    .fondo_cuadro_azul p{
+        color: #383838;
+        font-size: 16px;
+        font-family: 'PT Sans', sans-serif;
+    }
+    .letra_principal_informacion h2{
+        color: #383838;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .letra_principal_informacion p{
+        font-size: 16px;
+        font-family: 'PT Sans', sans-serif;
+        font-size: 16px;
+        color: #383838;
+    }
+    .letra_principal_informacion a{
+        color: #337ab7 !important;
+    }
+    .letra_principal_informacion h4{
+        color: #383838;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+    }
+    .border_bottom_gris_informacion{
+        border-bottom: 1px solid #ededed;
+        margin: 6px 0
+    }
+    .logo_nextryp{
+        width: 170px;
+        margin-bottom: 20px
+    }
+    @media(max-width:767px){
+        .boton_confirmacion button{
+            font-size: 14px;
+        }
+        .letra_especificacion_hotel h3{
+            font-size: 20px;
+        }
+        .fondo_cuadro_azul h5{
+            font-size: 16px;
+        }
+        .fondo_cuadro_azul h6{
+            font-size: 15px;
+        }
+        .letra_numero_de_reservacion{
+            text-align: left;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+        .logo_nextryp{
+            margin-bottom: 0;
+        }
+    }
+</style>
+
+<body>
+    <section class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <img class="logo_nextryp" src="http://www.nextryp.co/travel/assets/img/Nextryp-logo-2-02.png">
+                    </div>
+
+                    <div class="col-md-6 letra_numero_de_reservacion col-sm-6">
+                        <p>Número de reserva: <strong>1684375394</strong></p>
+                        <p>Código PIN: <strong>6855</strong></p>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <div class="col-md-12 letra_reserva_confirmada">
+                        <div class="row">
+                            <div class="col-md-1 col-sm-1 col-xs-1">
+                                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-md-11 col-sm-11 col-xs-11">
+                                <h6><strong>¡Gracias, Diego!</strong></h6>
+                                <h5><strong>Tu reserva en Cancun está confirmada.</strong></h5>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-md-1 col-sm-1 col-xs-1">
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-md-11 col-sm-11 col-xs-11">
+                                <p>El <strong>Ibis Cancun Centro</strong> te espera el <strong>20 de octubre</strong></p>
+                            </div>
+
+                            <div class="clearfix"></div>
+                            <div class="col-md-1 col-sm-1 col-xs-1">
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-md-11 col-sm-11 col-xs-11">
+                                <p>Pagarás directamente al alojamiento. El Ibis Cancun Centro gestiona los pagos. A continuación, encontrarás más información </p>
+                            </div>
+
+                            <div class="clearfix"></div>
+                            <div class="col-md-1 col-sm-1 col-xs-1">
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-md-11 col-sm-11 col-xs-11">
+                                <p>Puedes cancelar GRATIS hasta el 20 de octubre de 2017 a las 17:59 <a href="#">Haz cambios en tu reserva o envía tus preguntas al alojamiento</a> en un par de clics</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <div class="col-md-12 boton_confirmacion">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                                <button><i class="fa fa-print" aria-hidden="true"></i> Obtener la versión para imprimir</button>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <button><i class="fa fa-mobile" aria-hidden="true"></i> Guardar la configuración en el movil</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <div class="col-md-12 letra_especificacion_hotel">
+                        <h3>Ibis Cancun Centro</h3>
+                        <p>Avenida Tulum y Nichupte Supermanzana 11 Manzana 2 Lote 3, Cancun, 77504, México - <a href="#">Mostrar itinerario</a></p>
+                        <p><strong>Teléfono:</strong><a href="#"> +529982728502</a></p>
+
+                        <div class="col-md-6 imagenes_mapa_hotel col-sm-6" style="background-image: url(http://sfbayshop.com/images/maps/HaightStreetMap.gif);"></div>
+                        <div class="col-md-6 imagenes_mapa_hotel col-sm-6" style="background-image: url(http://www.thefloridahotelorlando.com/var/floridahotelorlando/storage/images/media/images/photo-gallery/hotel-images/florida-hotel-exteriror-shot-pool/26985-1-eng-US/Florida-Hotel-Exteriror-Shot-Pool.jpg);"></div>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <div class="col-md-12 detalles_reservacion">
+                        <div class="float_left">
+                            <h6>Tu reserva</h6>
+                            <p>5 noches, 1 habitación</p>
+                        </div>
+                        <div class="float_right">
+                            <a href="#"><h5>cambiar</h5></a>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="border_bottom_gris"></div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                <h6>Fechas</h6>
+                                <p>viernes 20 oct 2017</p>
+                                <span>Check-in desde las 15:00</span>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-6" style="border-left: 1px solid #ededed">
+                                <h6>Tu reserva</h6>
+                                <p>5 noches, 1 habitación</p>
+                                <span>Check-out de 12:00 a 13:00</span>
+                            </div>
+                        </div>
+                        <div class="border_bottom_gris"></div>
+                        <div>
+                            <h6>Pago por adelantado</h6>
+                            <p>No requiere pago por adelantado</p>
+                        </div>
+                        <div class="border_bottom_gris"></div>
+
+                        <div>
+                            <h6>Cargos de cancelación</h6>
+                            <ul>
+                                <li><p>Hasta 20 de octubre de 2017 17:59 [Cancún] : MXN 0</p></li>
+                                <li><p>Desde 20 de octubre de 2017 18:00 [Cancún] : MXN 738,65</p></li>
+                            </ul>
+                            <button>Cancelar tu reserva</button>
+                        </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <div class="col-md-12">
+                        <div class="fondo_cuadro_azul">
+                            <h6>1 Habitación Doble</h6>
+                            <div class="float_left">
+                                <h5>Precio</h5>
+                            </div>
+                            <div class="float_right">
+                                <h5>MXN 3.693,25</h5>
+                                <a>Igualamos el precio</a>
+                            </div>
+                            <div class="clearfix"></div>
+                            <p>Pagarás durante tu estancia en el Ibis Cancun Centro</p>
+                            <p>Preautorización: Con el fin de comprobar la validez de tu tarjeta de crédito y garantizar tu reserva, el alojamiento se reserva el derecho de bloquear un importe concreto antes de tu llegada.</p>
+                            <p>El pago se realizará al hotel en su moneda local (MXN) según el tipo de cambio vigente el día del pago.</p>
+                            <p>16% Impuesto no incluido.</p>
+                            <p>3% Impuesto municipal no incluido</p>
+                            <p>Atención: los suplementos adicionales (ej. cama supletoria) no están incluidos en el precio total.</p>
+                            <p>El precio de arriba no incluye suplementos como impuestos y cargos por servicio. nextryp.com no realiza ningún cargo de gestión, reserva u otro tipo de cargos.</p>
+                            <p>Si no te presentas o cancelas la reserva, el alojamiento cargará los impuestos correspondientes.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-12 letra_principal_informacion">
+                        <h2>¿Está todo correcto?</h2>
+                        <p>Puedes consultar o cambiar tu reserva online, sin necesidad de registrarte.</p>
+                        <div class="row">
+                            <div class="col-md-3 col-sm-3">
+                                <ul>
+                                    <li><p><a href="#">Editar datos del huésped</a></p></li>
+                                    <li><p><a href="#">Cambiar las fechas</a></p></li>
+                                    <li><p><a href="#">Contacta con el alojamiento</a></p></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-9 col-sm-9">
+                                <ul>
+                                    <li><p><a href="#">Solicitar registro de entrada antes de lo habitual o de salida después de lo habitual</a></p></li>
+                                    <li><p><a href="#">Editar datos de la tarjeta de crédito</a></p></li>
+                                    <li><p><a href="#">Cambiar tu habitación</a></p></li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <h2>Información de la habitación</h2>
+                        <p>Esta moderna habitación cuenta con suelo de parqué, aire acondicionado, conexión Wi-Fi gratuita, escritorio y baño privado con secador de pelo. Goza de vistas a la laguna Nichupté.</p>
+                        <div class="row">
+                            <div class="col-md-3 col-sm-3 col-xs-6">
+                                <h4>Nombre del huésped</h4>
+                            </div>
+                            <div class="col-md-9 col-sm-9 col-xs-6">
+                                <p>Diego Lara Editar <a>nombre del cliente</a></p>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-md-12">
+                                <div class="border_bottom_gris_informacion"></div>
+                            </div>
+
+                            <div class="col-md-3 col-sm-3 col-xs-6">
+                                <h4>Nombre del huésped</h4>
+                            </div>
+                            <div class="col-md-9 col-sm-9 col-xs-6">
+                                <p>máx. 2 personas <a>Editar número de clientes</a></p>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-md-12">
+                                <div class="border_bottom_gris_informacion"></div>
+                            </div>
+
+                            <div class="col-md-3 col-sm-3 col-xs-6">
+                                <h4>Régimen de comidas</h4>
+                            </div>
+                            <div class="col-md-9 col-sm-9 col-xs-6">
+                                <p>Desayuno cuesta MXN 99 por persona y noche. Cena cuesta MXN 110 por persona y noche.</p>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-md-12">
+                                <div class="border_bottom_gris_informacion"></div>
+                            </div>
+
+                        </div>
+                        <h2>Peticiones especiales</h2>
+                        <p>You have a booker that prefers communication by email</p>
+
+                        <h2>Pago</h2>
+                        <p>Has confirmado y garantizado tu reserva con tarjeta de crédito.</p>
+                        <p>Todos los pagos se realizan en el alojamiento durante tu estancia, a no ser que se indique lo contrario en las condiciones.</p>
+                        <p>El hotel se reserva el derecho de preautorizar la tarjeta de crédito antes de la fecha de entrada.</p>
+                        <p><strong>Este establecimiento acepta las siguientes formas de pago:</strong></p>
+                        <p>American Express, Visa, Euro/Mastercard</p>
+                        <p><a href="#">Cambiar los datos de la tarjeta de crédito</a></p>
+
+
+
+
+                        <h2 style="margin-bottom: 30px">Información de la habitación</h2>
+                        <div class="row">
+                            <div class="col-md-3 col-sm-3 col-xs-6">
+                                <h4>Condiciones de cancelación</h4>
+                            </div>
+                            <div class="col-md-9 col-sm-9 col-xs-6">
+                                <p>Podrás cancelar la reserva de forma gratuita hasta las 18:00 del día de llegada. Pagarás la primera noche si cancelas después de las 18:00 del día de llegada.</p>
+                                <p>El alojamiento es el encargado de determinar los cargos de cancelación o de modificación. Cualquier tipo de gasto adicional lo pagarás al alojamiento.</p>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-md-12">
+                                <div class="border_bottom_gris_informacion"></div>
+                            </div>
+
+                            <div class="col-md-3 col-sm-3 col-xs-6">
+                                <h4>Aparcamiento</h4>
+                            </div>
+                            <div class="col-md-9 col-sm-9 col-xs-6">
+                                <p>Hay parking privado en el establecimiento. No es necesario reservar. De pago.</p>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-md-12">
+                                <div class="border_bottom_gris_informacion"></div>
+                            </div>
+
+                            <div class="col-md-3 col-sm-3 col-xs-6">
+                                <h4>Internet</h4>
+                            </div>
+                            <div class="col-md-9 col-sm-9 col-xs-6">
+                                <p>Hay conexión a internet Wi-Fi disponible en todo el establecimiento. Gratis.</p>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-md-12">
+                                <div class="border_bottom_gris_informacion"></div>
+                            </div>
+
+                        </div>
+
+                        <p><a href="#">Ver todas las condiciones de la reserva</a></p>
+
+
+                        <h2 style="margin-bottom: 30px">¿Necesitas ayuda con tu reserva?</h2>
+                        <div class="row">
+                            <div class="col-md-3 col-sm-3 col-xs-6">
+                                <h4>Ponte en contacto con el alojamiento</h4>
+                            </div>
+                            <div class="col-md-9 col-sm-9 col-xs-6">
+                                <p>Teléfono: +529982728502</p>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-md-12 ">
+                                <div class="border_bottom_gris_informacion"></div>
+                            </div>
+
+                            <div class="col-md-3 col-sm-3  col-xs-6">
+                                <h4>Gestiona tu reserva</h4>
+                            </div>
+                            <div class="col-md-9 col-sm-9  col-xs-6">
+                                <p>Puedes <a href="#">ver tu reserva</a> o <a href="#">hacer cambios</a> de manera online y en cualquier momento.</p>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-md-12">
+                                <div class="border_bottom_gris_informacion"></div>
+                            </div>
+
+                            <div class="col-md-3 col-sm-3  col-xs-6">
+                                <h4>Preguntas generales</h4>
+                            </div>
+                            <div class="col-md-9 col-sm-9  col-xs-6">
+                                <p><a href="#">Visita nuestro Centro de ayuda</a> o <a href="#">contacta con Atención al cliente</a></p>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-md-12">
+                                <div class="border_bottom_gris_informacion"></div>
+                            </div>
+
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+

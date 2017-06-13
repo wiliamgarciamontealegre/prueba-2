@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Administrador de la propiedd</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap.css" />
+  <link rel="stylesheet" href="assets/css/jquery.datatables.min.css" />
+  <link rel="stylesheet" href="assets/css/animate.css" />
+  <link rel="stylesheet" href="assets/css/estilos.css" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:600" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/css/select2.css">
+</head>
+
+
+<body>
+
+  <button class="backtotop animated"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+
+  <section class="container-fluid fondo_gris_menu_administrador">
+    <section class="container">
+      <div class="row">
+
+        <div class="col-md-7 col-sm-7">
+          <h4><i class="fa fa-phone" aria-hidden="true"></i> +57 300 553 7083</h4>
+          <h4><i class="fa fa-envelope" aria-hidden="true"></i> info@nextryp.com</h4>
+        </div>
+
+        <div class="col-md-5 text-right col-sm-5">
+          <button><i class="fa fa-life-ring" aria-hidden="true"></i> Soporte</button>
+          <div class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: #c3c8cc">
+              Español
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="#">English</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <section class="container menu_principal_administrador" id="sticker">
+    <div class="row">
+
+      <div class="col-md-3 col-sm-3">
+        <img src="assets/img/Nextryp-logo-2-02.png">
+      </div>
+
+      <div class="col-md-9 text-right col-sm-9">
+
+        <button class="dropbtn"><i class="fa fa-book" aria-hidden="true"></i> RESERVAS 
+        </button>
+
+        <button class="dropbtn"><i class="fa fa-calendar" aria-hidden="true"></i> DISPONIBILIDAD
+        </button>
+
+        <button class="dropbtn"><i class="fa fa-bed" aria-hidden="true"></i> HABITACIONES
+        </button>
+
+        <button class="dropbtn"><i class="fa fa-money" aria-hidden="true"></i> TARIFAS
+        </button>
+
+        <div class="dropdown">
+          <button class="dropbtn"><i class="fa fa-home" aria-hidden="true"></i> PROPIEDAD</button>
+          <div class="dropdown-content">
+            <a href="hostel-images.html"><i class="fa fa-picture-o" aria-hidden="true"></i> Imagenes</a>
+          </div>
+        </div>
+
+        <button class="dropbtn"><i class="fa fa-sign-out" aria-hidden="true"></i> SALIR
+        </button>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="container-fluid fondo_formulario_partner">  
+    <section class="container">
+
+      <div class="row">
+        <div class="col-md-12 padding_top_botton_20">
+          <h2 class="letra_gris_titulos">Publica tu propiedad en nextryp.com</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 col-sm-6">
+          <div class="form-group">
+            <label>Nombre de contacto <span>*</span></label>
+            <input class="form-control" name="nombre" placeholder="Introduce nombre">
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <div class="form-group">
+            <label>Dirección de correo electrónico personal</label>
+            <input type="email" class="form-control"  name="correo_personal" placeholder="Introduce correo">
+          </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="col-md-6 col-sm-6">
+          <div class="form-group">
+            <label>Dirección de Correo electrónico<span>*</span></label>
+            <input type="email" class="form-control"  name="correo" placeholder="Introduce correo electronico">
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <div class="form-group">
+            <label>Dirección 1<span>*</span></label>
+            <input class="form-control"  name="direccion_1" placeholder="Introduce dirección">
+          </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="col-md-6 col-sm-6">
+          <div class="form-group">
+            <label>Dirección 2</label>
+            <input class="form-control" name="direccion_2" placeholder="Introduce dirección">
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <div class="form-group">
+            <label>Código postal</label>
+            <input class="form-control" name="codigo_postal" placeholder="Código postal">
+          </div>
+        </div>
+
+        <div class="clearfix"></div>
+        <div class="col-md-6 col-sm-6">
+          <div class="form-group">
+            <label>País <span>*</span></label>
+            <select class="selectpicker">
+              <option value="AR">Argentina</option>
+              <option value="BR">Brasil</option>
+              <option value="CL">Chile</option>
+              <option value="CO" selected="">Colombia</option>
+              <option value="CR">Costa Rica</option>
+              <option value="EC">Ecuador</option>
+              <option value="SV">El Salvador</option>
+              <option value="US">Estados Unidos</option>
+              <option value="GT">Guatemala</option>
+              <option value="MX">México</option>
+              <option value="NI">Nicaragua</option>
+              <option value="PA">Panamá</option>
+              <option value="PY">Paraguay</option>
+              <option value="PE">Perú</option>
+              <option value="PR">Puerto Rico</option>
+              <option value="DO">República Dominicana</option>
+              <option value="UY">Uruguay</option>
+              <option value="VE">Venezuela</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <div class="form-group">
+            <label>Ciudad <span>*</span></label>
+            <label>País <span>*</span></label>
+            <select class="selectpicker">
+              <option value="0">Seleccione país</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="col-md-6 col-sm-6">
+          <div class="form-group">
+            <label>Estado</label>
+            <input class="form-control"  name="estado" placeholder="Escoge el estado">
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <div class="form-group">
+            <label>Moneda</label>
+            <select class="selectpicker">
+              <option value="AF">USD</option>
+              <option value="AL">COP</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="col-md-6 col-sm-6">
+          <div class="form-group">
+            <label>Número de teléfono <span>*</span></label>
+            <input type="number" class="form-control"  name="telefono" placeholder="Introduce Teléfono">
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <div class="form-group">
+            <label>Número Móvil</label>
+            <input  type="number" class="form-control" name="telefono_movil" placeholder="Introduce número">
+          </div>
+        </div>
+
+        <div class="clearfix"></div>
+        <div class="col-md-6 col-sm-6">
+          <div class="form-group">
+            <label>Dirección de sitio web</label>
+            <input type="url" class="form-control"  name="web" placeholder="Introduce sitio web">
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <div class="form-group">
+            <label>¿Cómo nos conoció?</label>
+            <select class="selectpicker">
+              <option>Seleccionar respuesta</option>
+              <option>Un amigo</option>
+              <option>Agente de nextryp.com</option>
+              <option>Boca a Boca</option>
+              <option>John sarmiento</option>
+              <option>Website de nextryp.com</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+      </div>
+    </section>
+  </section>
+
+
+
+  <section class="container padding_top_botton_20">
+    <div class="row">
+      <div class="col-md-12 padd">
+        <h5 class="letra_gris_sub_titulos">Detalles del Hostal</h5>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-fluid fondo_formulario_partner">  
+    <section class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-6">
+          <div class="form-group">
+            <label>Nombre de la propiedad 
+              <span>*</span>
+            </label>
+            <input class="form-control" name="propiedad" placeholder="Introduce Nombre" />
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <div class="form-group">
+            <label>Tipo de propiedad 
+              <span>*</span>
+            </label>
+            <select class="selectpicker">
+              <option>Seleccionar tipo de propiedad</option>
+              <option>Hotel</option>
+              <option>Hostal</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="col-md-6 col-sm-6">
+          <div class="form-group">
+            <label>Número total de camas en el hostal 
+              <span>*</span>
+            </label>
+            <input type="number" class="form-control" name="numero_camas" placeholder="Introduce número de camas" />
+          </div>
+        </div>
+
+        <div class="col-md-6 col-sm-6">
+          <div class="form-group">
+            <label>Número total de habitaciones 
+              <span>*</span>
+            </label>
+            <input type="number" class="form-control"  name="numero_habitaciones" placeholder="Introduce número de habitaciones" />
+          </div>
+        </div>
+        <div class="clearfix"></div>
+
+        <div class="col-md-6 col-sm-6">
+          <div class="form-group">
+            <label>Descripción de la propiedad (English)</label>
+            <textarea onkeyup="countChar(this, 'descripcionen')" placeholder="My Hostel is a very nice hostel that offers Laundry Facilities, 24 hours reception, BBq and cable TV. The breakfast is included. My Hostel is located in the gastronomic, bohemian and artistic neighbourhood of the city La Macarena close to the Museums, Monserrate and all of the touristic places in Bogotá. We have 1 private rooms with private bathrooms, 1 dorm of 10 beds with shared bathroom, 4 dorms of 4 beds with shared bathrooms and 1 Dorm with 6 beds. We have a fully equipped kitchen, computer room, WiFi, a TV room and 24 hours. Breakfast is"></textarea>
+            <div id="descripcionen" class="lblcount"></div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-sm-6">
+          <div class="form-group">
+            <label>Directrices de la propiedad (English)</label>
+            <textarea onkeyup="countChar(this, 'directricesen')" placeholder="My Hostel's Policies & Conditions: Check in from 14:00 to 23:00 .  Check out before 11:00 . Payment upon arrival by cash, credit cards, debit cards. (This property may pre-authorise your card before arrival). Taxes included."></textarea>
+            <div id="directricesen" class="lblcount"></div>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+
+        <div class="col-md-6 col-sm-6">
+          <div class="form-group">
+            <label>¿Cómo llegar al hostal ? (English)</label>
+            <textarea onkeyup="countChar(this, 'comollegaren')" placeholder="Desde el aeropuerto en taxi toma alrededor de 40 minutos en horas punta y cuesta $ 22.000 Cop, (11USD) aproximadamente. Por Transmilenio desde el Aeropuerto Internacional le llevará alrededor de 30 minutos y cuesta $ 1.700 Cop (0.90USD) aproximadamente. Si tomas esta opción tienes que encontrar el autobús (16 - 14) a "Puerto El Dorado" y luego entrar en el trasmilenio L10 o L97 hasta "Cale 22" (8ª parada), ahora debes conectarte con el transmilenio B13 hasta ¨Flores¨ (2ª parada)."></textarea>
+            <div id="comollegaren" class="lblcount"></div>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="col-md-6 col-sm-6">
+          <div class="form-group">
+            <label>Reservas para grupos pequeños</label>
+            <select class="selectpicker">
+              <option>Seleccionar opcion para grupos</option>
+              <option>Si</option>
+              <option>No</option>
+            </select>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+
+        <div class="col-md-6">
+          <div class="form-group">
+            <label>Número total de habitaciones</label>
+            <label>¿Deseas recibir información sobre Backpacking Online?</label>
+            <div class="checkbox margin_cero checkbox_formulario">
+              <label>
+                <input type="checkbox" />si
+              </label>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </section>
+
+
+  <section class="container padding_top_botton_20">
+    <div class="row">
+      <div class="col-md-12 padd">
+        <h5 class="letra_gris_sub_titulos">Servicios</h5>
+        <h6 class="letra_gris_formulario">Agrega los servicios que ofrece tu hostal</h6>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-fluid fondo_formulario_partner">
+    <section class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-4">
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Recepción 24 horas</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Aire Acondicionado</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Bar</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Alquiler De Bicicletas</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Intercambio de libros</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Business centre</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Teléfonos con tarjeta</label>
+          </div>
+
+
+
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Sala común</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Cunas disponibles</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Teléfono con marcación directa</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Secadora</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Registro de entrada y salida expresar</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Mapa de la ciudad gratuito</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Aparcamiento gratuito</label>
+          </div>
+
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Futbolín</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Gimnasio</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Ducha con agua caliente</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Piscina de interior</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Plancha/Tabla de Planchar</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Cocina</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Ropa de cama incluida</label>
+          </div>
+
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Consigna</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Microondas</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Club nocturno</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Aparcamiento</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Servicio postal</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Restaurante</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Caja fuerte</label>
+          </div>
+
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Baño de Vapor</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Pistas de tenis</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Toallas incluidas</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Máquinas expendedoras</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Acceso con Silla de Ruedas</label>
+          </div>
+
+        </div>
+
+
+
+
+
+        <div class="col-md-4 col-sm-4">
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Seguridad 24 horas</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Translado de Aeropuerto</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">BBQ</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Aparcamiento para bicicletas</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Desayuno</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">TV por cable</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Ventilador de techo</label>
+          </div>
+
+
+
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Concierge</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">CRCHE</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Lavavajillas</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Selección de DVD</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Servicio de Fax</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Tour gratuito de la ciudad</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">WIFI Gratis</label>
+          </div>
+
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Salón de juegos</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Secador de pelo</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Jacuzzi</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Acceso a Internet</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Anuncios de Trabajo</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Check out tardío</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Sábanas no incluidas</label>
+          </div>
+
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Comidas disponibles</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Mini Bar</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Piscina al aire libre</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">PlayStation</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Lámpara de lectura</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Servicio de Habitaciones (24 horas)</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Sauna</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Piscina</label>
+          </div>
+
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Tours/Información turistica</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Toallas no incluidas</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Servicio de despertador</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">WiFi</label>
+          </div>
+
+        </div>
+
+
+
+
+
+        <div class="col-md-4 col-sm-4">
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Adaptadores</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">ATM</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Salón de belleza</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Juegos de mesa</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Desayuno no incluido</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Café</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Zona Infantil de juegos</label>
+          </div>
+
+
+
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Cocina</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Cambio de moneda</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Servicio de lavandería</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Ascensor</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Servicio aeropuerto gratuito</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Acceso a Internet gratuito</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Fridge/Freezer</label>
+          </div>
+
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Campo de golf</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Alquiler de Secador de pelo</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Limpieza de la habitación</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Ciber Café</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Acceso mediante tarjeta llave</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Instalaciones de lavandería
+            </label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Consignas</label>
+          </div>
+
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Sala de reuniones</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Mini-Supermercado</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Terraza al aire libre</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Mesa de billar</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Recepción (horario limitado)</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Servicio de Habitaciones (horario limitado)</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Shuttle Bus</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Kit para preparar té y café</label>
+          </div>
+
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Toallas de alquiler</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Utensilios</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Lavadora</label>
+          </div>
+          <div class="checkbox checkbox_formulario">
+            <label><input type="checkbox" value="">Wii</label>
+          </div>
+
+        </div>
+
+
+
+
+
+      </div>
+    </section>
+  </section>
+
+  <section class="container padding_top_botton_20">
+    <div class="row">
+      <div class="col-md-12 padd">
+        <h5 class="letra_gris_sub_titulos">Detalles del hostal en Español</h5>
+        <h6 class="letra_gris_formulario">Por favor añade algunos detalles comentados</h6>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-fluid fondo_formulario_partner">  
+    <section class="container">
+      <div class="row">
+
+
+
+        <div class="col-md-6 col-sm-6">
+          <div class="form-group">
+            <label>Descripción de la propiedad (Español)</label>
+            <textarea onkeyup="countChar(this, 'descripcion')" placeholder="Mi Hostal es  muy agradable  y ofrece instalaciones de lavandería, recepción 24 horas, TV por cable y BBq. El desayuno está incluido. Mi Hostal se encuentra en el barrio gastronómico, bohemio y artístico de la ciudad de La Macarena cerca de los Museos, Monserrate y todos los lugares turísticos de Bogotá."></textarea>
+            <div id="descripcion" class="lblcount"></div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-sm-6">
+          <div class="form-group">
+            <label>Directrices de la propiedad (Español)</label>
+            <textarea onkeyup="countChar(this, 'directrices')" placeholder="Políticas y condiciones de Mi Hostal:Llegada de 14:00 a 23:00.Salida antes de las 11:00. Pago a la llegada en efectivo, tarjetas de crédito, tarjetas de débito. (Esta propiedad puede pre-autorizar su tarjeta antes de la llegada).Impuestos incluidos."></textarea>
+            <div id="directrices" class="lblcount"></div>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+
+        <div class="col-md-6 col-sm-6">
+          <div class="form-group">
+            <label>Cómo llegar al hostal ? (Español)</label>
+            <textarea onkeyup="countChar(this, 'comollegar')" placeholder="From the airport by taxi takes around 40 minutes in rush hours and it costs $22.000 Cop, (11USD) approximately. By Transmilenio from the International Airport will take you around 30 minutes and it costs $1.700 Cop (0.90USD) approximately. If you take this option you have to find the shuttle bus (16 - 14) to ¨Portal El Dorado¨ then get into the trasmilenio L10 or L97 until ¨Calle 22¨ (8th stop), now you must connect with the transmilenio B13 until ¨Flores¨ (2nd stop). Flores station has two exits, take the ¨Calle 69¨ (69th street) exit and walk up by 69th street"></textarea>
+            <div id="comollegar" class="lblcount"></div>
+          </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+
+
+      </div>
+    </section>
+  </section>
+
+
+
+  <section class="container padding_top_botton_20">
+    <div class="row">
+      <div class="col-md-12 padd">
+        <h5 class="letra_gris_sub_titulos">Sincronización</h5>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="container-fluid fondo_formulario_partner">  
+    <section class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <div class="display_iniline_block">
+            <h4 class="letra_gris_sub_titulos ">¿Tienes cuenta en Myallocator?</h4>
+          </div>
+          <div class="display_iniline_block">
+            <img src="assets/img/myallocator2.png">
+          </div>
+          <div class="checkbox_si_no_formulario">
+            <label class="radio-inline"><input type="radio" name="optradio">SI</label>
+            <label class="radio-inline"><input type="radio" name="optradio">NO</label>
+          </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+
+      </div>
+    </section>
+  </section>  
+
+  <section class="container">
+    <div class="row">
+      <div class="col-md-12  padding_top_botton_20 text-center">
+        <button class="boton_principal"> <i class="fa fa-floppy-o" aria-hidden="true"></i> GUARDAR HOSTEL</button>
+      </div>
+    </div>
+  </section>
+
+
+  <<section class="container-fluid fondo_azul_footer_ayuda">
+  <section class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h2>¿Necesitas ayuda?</h2>
+        <h1><i class="fa fa-phone" aria-hidden="true"></i> +57 300 553 7083</h1>
+      </div>
+    </div>
+  </section>
+</section>
+
+<section class="container-fluid footer_administrador">
+  <section class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-3">
+        <img src="assets/img/Nextryp-logo-2-02.png">
+        <p>Somos un portal dedicado a comunicar a los hostales con sus clientes potenciales.</p>
+        <ul class="redes_sociales_footer_administrador">
+          <a href="#"><li><i class="fa fa-facebook-square" aria-hidden="true"></i></li></a>
+          <a href="#"><li><i class="fa fa-twitter-square" aria-hidden="true"></i></li></a>
+          <a href="#"><li><i class="fa fa-google-plus-square" aria-hidden="true"></i></li></a>
+          <a href="#"><li><i class="fa fa-linkedin-square" aria-hidden="true"></i></li></a>
+        </ul>
+      </div>
+
+      <div class="col-md-3 col-sm-3">
+        <h5>Hostales</h5>
+        <ul>
+          <a href="#"><li>Bogotá</li></a>
+          <a href="#"><li>Medellín</li></a>
+          <a href="#"><li>Ciudad de México</li></a>
+          <a href="#"><li>Piura</li></a>
+          <a href="#"><li>Buenos aires</li></a>
+          <a href="#"><li>Rio de janeiro</li></a>
+        </ul>
+      </div>
+
+
+      <div class="col-md-3 col-sm-3">
+        <h5>Nosotros</h5>
+        <ul>
+          <a href="#"><li>Términos y condiciones</li></a>
+          <a href="#"><li>Preguntas frecuentes</li></a>
+          <a href="#"><li>Servicio al cliente</li></a>
+          <a href="#"><li>Políticas de privacidad</li></a>
+        </ul>
+      </div>
+
+      <div class="col-md-3 col-sm-3">
+        <h5>Contáctanos</h5>
+        <input type="text" placeholder="Nombre" />
+        <input type="text" placeholder="E-mail" />
+        <textarea placeholder="Mensaje"></textarea>
+        <button>Enviar</button>
+      </div>
+
+
+    </div>
+  </section>
+</section>
+
+</body>
+
+</html>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.min.js"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.js"></script>
+
+<script>
+
+  jQuery( document ).ready(function($) {
+
+    x = $(".backtotop");
+
+    $("#sticker").sticky({
+      topSpacing:0,
+    });
+
+    $('select').select2();
+
+    $(".lblcount").text("500 carácteres restantes.");
+
+    var scrollPos = $(window).scrollTop();
+    if(scrollPos > 100){
+      x.removeClass("bounceOutDown").addClass("bounceInUp");
+    } else {
+      x.removeClass("bounceInUp").addClass("bounceOutDown");
+    }
+
+    window.onscroll = function (e) {  
+      var scrollPos = $(window).scrollTop();
+
+      if(scrollPos > 100){
+        x.removeClass("bounceOutDown").addClass("bounceInUp");
+      } else {
+        x.removeClass("bounceInUp").addClass("bounceOutDown");
+      }
+
+    }
+
+    $(".backtotop").on("click", function(){
+      $("html, body").animate({ scrollTop: "0px" });
+    });
+
+  });
+
+  function countChar(val, label){
+    len = val.value.length;
+    if (len >= 500) {
+      val.value = val.value.substring(0, 500);
+    } else {
+      document.getElementById(label).innerHTML = (500 - len) + " carácteres restantes.";
+    }
+  }
+
+
+
+</script>

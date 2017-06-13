@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Administrador de la propiedd</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap.css" />
+  <link rel="stylesheet" href="assets/css/jquery.datatables.min.css" />
+  <link rel="stylesheet" href="assets/css/animate.css" />
+  <link rel="stylesheet" href="assets/css/estilos.css" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:600" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/css/select2.css">
+</head>
+
+
+<body>
+
+  <button class="backtotop animated"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+
+  <section class="container-fluid fondo_gris_menu_administrador">
+    <section class="container">
+      <div class="row">
+
+        <div class="col-md-7 col-sm-7">
+          <h4><i class="fa fa-phone" aria-hidden="true"></i> +57 300 553 7083</h4>
+          <h4><i class="fa fa-envelope" aria-hidden="true"></i> info@nextryp.com</h4>
+        </div>
+
+        <div class="col-md-5 text-right col-sm-5">
+          <button><i class="fa fa-life-ring" aria-hidden="true"></i> Soporte</button>
+          <div class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: #c3c8cc">
+              Español
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="#">English</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <section class="container menu_principal_administrador" id="sticker">
+    <div class="row">
+
+      <div class="col-md-3 col-sm-3">
+        <img src="assets/img/Nextryp-logo-2-02.png">
+      </div>
+
+      <div class="col-md-9 text-right col-sm-9">
+
+        <button class="dropbtn"><i class="fa fa-book" aria-hidden="true"></i> RESERVAS 
+        </button>
+
+        <button class="dropbtn active_menu"><i class="fa fa-calendar" aria-hidden="true"></i> DISPONIBILIDAD
+        </button>
+
+        <button class="dropbtn"><i class="fa fa-bed" aria-hidden="true"></i> HABITACIONES
+        </button>
+
+        <button class="dropbtn"><i class="fa fa-money" aria-hidden="true"></i> TARIFAS
+        </button>
+
+        <div class="dropdown">
+          <button class="dropbtn"><i class="fa fa-home" aria-hidden="true"></i> PROPIEDAD</button>
+          <div class="dropdown-content">
+            <a href="hostel-images.html"><i class="fa fa-picture-o" aria-hidden="true"></i>
+             Imagenes</a>
+           </div>
+         </div>
+
+         <button class="dropbtn"><i class="fa fa-sign-out" aria-hidden="true"></i> SALIR
+         </button>
+
+       </div>
+
+     </div>
+   </section>
+
+
+   <section class="container-fluid fondo_gris_availabity">
+    <section class="container">
+      <div class="row">
+        <div class="fondo_blanco_availabity_superior">
+          <p>Daily Rates & Availability</p>
+        </div>
+        <div class="col-md-12 fondo_blanco_availibility">
+          <div class="row">
+            <div class="col-md-12 letra_availabity">
+              <h6>You can see a 'read only' view of your rates and availability on Hostelworld below. Please select a date range if you wish to see what is availabe on Hostelworld for future dates. Any updates to your rates and availability must be made via your PMS.</h6>
+            </div>
+            <div class="col-md-12">
+              <div class="fondo_gris_availabity_fecha background_gris_claro_availability">
+                <p>From</p>
+                <img src="assets/img/link_back_button_grey.gif">
+                <select class="selectpicker">
+                  <option>Jan</option>
+                  <option>Feb</option>
+                  <option>Mar</option>
+                  <option>Apr</option>
+                  <option>May</option>
+                  <option>Jun</option>
+                  <option>Jul</option>
+                  <option>Aug</option>
+                  <option>Sep</option>
+                  <option>Oct</option>
+                  <option>Nov</option>
+                  <option>Dec</option>
+                </select>
+                <select class="selectpicker">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                  <option>11</option>
+                  <option>12</option>
+                  <option>13</option>
+                  <option>14</option>
+                  <option>15</option>
+                  <option>16</option>
+                  <option>17</option>
+                  <option>18</option>
+                  <option>19</option>
+                  <option>20</option>
+                  <option>21</option>
+                  <option>22</option>
+                  <option>23</option>
+                  <option>24</option>
+                  <option>25</option>
+                  <option>26</option>
+                  <option>27</option>
+                  <option>28</option>
+                  <option>29</option>
+                  <option>30</option>
+                  <option>31</option>
+                </select>
+                <select class="selectpicker">
+                  <option>17</option>
+                  <option>18</option>
+                  <option>19</option>
+                </select>
+
+                <p>To</p>
+                <select class="selectpicker">
+                  <option>Jan</option>
+                  <option>Feb</option>
+                  <option>Mar</option>
+                  <option>Apr</option>
+                  <option>May</option>
+                  <option>Jun</option>
+                  <option>Jul</option>
+                  <option>Aug</option>
+                  <option>Sep</option>
+                  <option>Oct</option>
+                  <option>Nov</option>
+                  <option>Dec</option>
+                </select>
+                <select class="selectpicker">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                  <option>11</option>
+                  <option>12</option>
+                  <option>13</option>
+                  <option>14</option>
+                  <option>15</option>
+                  <option>16</option>
+                  <option>17</option>
+                  <option>18</option>
+                  <option>19</option>
+                  <option>20</option>
+                  <option>21</option>
+                  <option>22</option>
+                  <option>23</option>
+                  <option>24</option>
+                  <option>25</option>
+                  <option>26</option>
+                  <option>27</option>
+                  <option>28</option>
+                  <option>29</option>
+                  <option>30</option>
+                  <option>31</option>
+                </select>
+                <select class="selectpicker">
+                  <option>17</option>
+                  <option>18</option>
+                  <option>19</option>
+                </select> 
+                <img src="assets/img/link_out_button_grey.gif">
+                <button>Go!</button>
+              </div>
+            </div>  
+
+            <div class="clearfix"></div>
+
+            <div class="col-md-12">
+              <div class="fondo_azul_availabity">
+                <div class="row">
+                  <div class="col-md-6">
+                    <p>Allocation per day / Daily Rates in COP</p>
+                  </div>
+                  <div class="col-md-6">
+                    <p>Allocation per day / Daily Rates in COP</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="col-md-12">
+              <div class="fondo_gris_dormitarios">
+                <div class="row">
+                  <div class="col-md-3 col-sm-3">
+
+                  </div>
+                  <div class="col-md-9 col-sm-9 ">
+                    <ul class="fondo_azul_dias">
+                      <li>
+                        <p><strong>Tue</strong></p>
+                        <p>25</p>
+                      </li>
+                      <li>
+                        <p><strong>Wed</strong></p>
+                        <p>26</p>
+                      </li>
+                      <li>
+                        <p><strong>Thu</strong></p>
+                        <p>27</p>
+                      </li>
+                      <li>
+                        <p><strong>Fri</strong></p>
+                        <p>28</p>
+                      </li>
+                      <li>
+                        <p><strong>Sat</strong></p>
+                        <p>29</p>
+                      </li>
+                      <li>
+                        <p><strong>Sun</strong></p>
+                        <p>30</p>
+                      </li>
+                      <li>
+                        <p><strong>Mon</strong></p>
+                        <p>01</p>
+                      </li>
+                      <li>
+                        <p><strong>Tue</strong></p>
+                        <p>02</p>
+                      </li>
+                      <li>
+                        <p><strong>Wed</strong></p>
+                        <p>03</p>
+                      </li>
+                      <li>
+                        <p><strong>Thu</strong></p>
+                        <p>04</p>
+                      </li>
+                      <li>
+                        <p><strong>Fri</strong></p>
+                        <p>05</p>
+                      </li>
+                      <li>
+                        <p><strong>Sat</strong></p>
+                        <p>06</p>
+                      </li>
+                      <li>
+                        <p><strong>Sun</strong></p>
+                        <p>07</p>
+                      </li>
+                      <li>
+                        <p><strong>Mon</strong></p>
+                        <p>08</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="col-md-12">
+              <div class="fondo_gris_claro_dormitarios">
+                <div class="row">
+                  <div class="col-md-3">
+                    <p><strong>DORMITORIES</strong></p>
+                  </div>
+                  <div class="col-md-9 text-center">
+                    <p>Please note that dormitory availability and rates are managed on a <strong>per bed</strong> basis</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+
+            <div class="col-md-12">
+              <div class="fondo_gris_dormitarios">
+                <div class="row">
+                  <div class="col-md-3 col-sm-3 border_bottom_balnco">
+                    <div class="float_left">
+                      <p>LA CANDELARIA</p>
+                    </div>
+                    <div class="float_right">
+                      <img src="assets/img/hw-icon.gif">
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="float_right">
+                      <img src="assets/img/money-icon.gif">
+                    </div>
+                  </div>
+                  <div class="col-md-9 col-sm-9 ">
+                    <ul class="input_dormitorios_availabity">
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li class="active_hotel_dia">
+                        <input type="text" />
+                      </li>
+
+                      <li class="active_hotel_dia">
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li class="active_hotel_dia">
+                        <input type="text" />
+                      </li>
+                      <li class="active_hotel_dia">
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                    </ul>
+
+                    <ul class="input_dormitorios_availabity">
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li class="active_hotel_dia">
+                        <input type="text" />
+                      </li>
+
+                      <li class="active_hotel_dia">
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li class="active_hotel_dia">
+                        <input type="text" />
+                      </li>
+                      <li class="active_hotel_dia">
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="col-md-12">
+              <div class="fondo_gris_dormitarios">
+                <div class="row">
+                  <div class="col-md-3 col-sm-3 border_bottom_balnco">
+                    <div class="float_left">
+                      <p>MONSERRATE</p>
+                    </div>
+                    <div class="float_right">
+                      <img src="assets/img/hw-icon.gif">
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="float_right">
+                      <img src="assets/img/money-icon.gif">
+                    </div>
+                  </div>
+                  <div class="col-md-9 col-sm-9 ">
+                    <ul class="input_dormitorios_availabity">
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li class="active_hotel_dia">
+                        <input type="text" />
+                      </li>
+
+                      <li class="active_hotel_dia">
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li class="active_hotel_dia">
+                        <input type="text" />
+                      </li>
+                      <li class="active_hotel_dia">
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                    </ul>
+
+                    <ul class="input_dormitorios_availabity">
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li class="active_hotel_dia">
+                        <input type="text" />
+                      </li>
+
+                      <li class="active_hotel_dia">
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li class="active_hotel_dia">
+                        <input type="text" />
+                      </li>
+                      <li class="active_hotel_dia">
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="col-md-12">
+              <div class="fondo_gris_dormitarios">
+                <div class="row">
+                  <div class="col-md-3 col-sm-3 border_bottom_balnco">
+                    <div class="float_left">
+                      <p>LAGUNA DE GUATAVITA</p>
+                    </div>
+                    <div class="float_right">
+                      <img src="assets/img/hw-icon.gif">
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="float_right">
+                      <img src="assets/img/money-icon.gif">
+                    </div>
+                  </div>
+                  <div class="col-md-9 col-sm-9 ">
+                    <ul class="input_dormitorios_availabity">
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li class="active_hotel_dia">
+                        <input type="text" />
+                      </li>
+
+                      <li class="active_hotel_dia">
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li class="active_hotel_dia">
+                        <input type="text" />
+                      </li>
+                      <li class="active_hotel_dia">
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                    </ul>
+
+                    <ul class="input_dormitorios_availabity">
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li class="active_hotel_dia">
+                        <input type="text" />
+                      </li>
+
+                      <li class="active_hotel_dia">
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li class="active_hotel_dia">
+                        <input type="text" />
+                      </li>
+                      <li class="active_hotel_dia">
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="col-md-12">
+              <div class="fondo_gris_claro_dormitarios">
+                <div class="row">
+                  <div class="col-md-3">
+                    <p><strong>PRIVATE ROOMS</strong></p>
+                  </div>
+                  <div class="col-md-9 text-center">
+                    <p>Please note that dormitory availability and rates are managed on a <strong>per bed</strong> basis</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="col-md-12">
+              <div class="fondo_gris_dormitarios">
+                <div class="row">
+                  <div class="col-md-3 col-sm-3 border_bottom_balnco">
+                    <div class="float_left">
+                      <p>LA CALERA</p>
+                    </div>
+                    <div class="float_right">
+                      <img src="assets/img/hw-icon.gif">
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="float_right">
+                      <img src="assets/img/money-icon.gif">
+                    </div>
+                  </div>
+                  <div class="col-md-9 col-sm-9 ">
+                    <ul class="input_dormitorios_availabity">
+                      <li class="input_cero_camas">
+                        <input type="text" />
+                      </li>
+                      <li class="input_cero_camas">
+                        <input type="text" />
+                      </li>
+                      <li class="input_cero_camas ">
+                        <input type="text" />
+                      </li>
+                      <li class="input_cero_camas">
+                        <input type="text" />
+                      </li>
+                      <li class="active_hotel_dia input_cero_camas">
+                        <input type="text" />
+                      </li>
+
+                      <li class="active_hotel_dia input_cero_camas">
+                        <input type="text" />
+                      </li>
+                      <li class="input_cero_camas">
+                        <input type="text" />
+                      </li>
+                      <li class="input_cero_camas">
+                        <input type="text" />
+                      </li>
+                      <li class="input_cero_camas">
+                        <input type="text" />
+                      </li>
+                      <li class="input_cero_camas">
+                        <input type="text" />
+                      </li>
+                      <li class="input_cero_camas">
+                        <input type="text" />
+                      </li>
+                      <li class="active_hotel_dia input_cero_camas">
+                        <input type="text" />
+                      </li>
+                      <li class="active_hotel_dia input_cero_camas">
+                        <input type="text" />
+                      </li>
+                      <li class="input_cero_camas">
+                        <input type="text" />
+                      </li>
+                    </ul>
+
+                    <ul class="input_dormitorios_availabity">
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li class="active_hotel_dia">
+                        <input type="text" />
+                      </li>
+
+                      <li class="active_hotel_dia">
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li class="active_hotel_dia">
+                        <input type="text" />
+                      </li>
+                      <li class="active_hotel_dia">
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="clearfix"></div>
+
+            <div class="col-md-12">
+              <div class="fondo_gris_dormitarios">
+                <div class="row">
+                  <div class="col-md-3 col-sm-3 border_bottom_balnco">
+                    <div class="float_left">
+                      <p>ZIPAQUIRA</p>
+                    </div>
+                    <div class="float_right">
+                      <img src="assets/img/hw-icon.gif">
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="float_right">
+                      <img src="assets/img/money-icon.gif">
+                    </div>
+                  </div>
+                  <div class="col-md-9 col-sm-9 ">
+                    <ul class="input_dormitorios_availabity">
+                      <li class="input_cero_camas">
+                        <input type="text" />
+                      </li>
+                      <li class="input_cero_camas">
+                        <input type="text" />
+                      </li>
+                      <li class="input_cero_camas ">
+                        <input type="text" />
+                      </li>
+                      <li class="input_cero_camas">
+                        <input type="text" />
+                      </li>
+                      <li class="active_hotel_dia input_cero_camas">
+                        <input type="text" />
+                      </li>
+
+                      <li class="active_hotel_dia">
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li class="active_hotel_dia">
+                        <input type="text" />
+                      </li>
+                      <li class="active_hotel_dia">
+                        <input type="text" />
+                      </li>
+                      <li >
+                        <input type="text" />
+                      </li>
+                    </ul>
+
+                    <ul class="input_dormitorios_availabity">
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li class="active_hotel_dia">
+                        <input type="text" />
+                      </li>
+
+                      <li class="active_hotel_dia">
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li class="active_hotel_dia">
+                        <input type="text" />
+                      </li>
+                      <li class="active_hotel_dia">
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+
+            <div class="col-md-12">
+              <div class="fondo_gris_dormitarios">
+                <div class="row">
+                  <div class="col-md-3 col-sm-3 border_bottom_balnco">
+                    <div class="float_left">
+                      <p>USAQUEN</p>
+                    </div>
+                    <div class="float_right">
+                      <img src="assets/img/hw-icon.gif">
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="float_right">
+                      <img src="assets/img/money-icon.gif">
+                    </div>
+                  </div>
+                  <div class="col-md-9 col-sm-9 ">
+                    <ul class="input_dormitorios_availabity">
+                      <li class="input_cero_camas">
+                        <input type="text" />
+                      </li>
+                      <li class="input_cero_camas">
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li class="input_cero_camas">
+                        <input type="text" />
+                      </li>
+                      <li class="active_hotel_dia input_cero_camas">
+                        <input type="text" />
+                      </li>
+
+                      <li class="active_hotel_dia">
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li class="active_hotel_dia">
+                        <input type="text" />
+                      </li>
+                      <li class="active_hotel_dia">
+                        <input type="text" />
+                      </li>
+                      <li >
+                        <input type="text" />
+                      </li>
+                    </ul>
+
+                    <ul class="input_dormitorios_availabity">
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li class="active_hotel_dia">
+                        <input type="text" />
+                      </li>
+
+                      <li class="active_hotel_dia">
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li class="active_hotel_dia">
+                        <input type="text" />
+                      </li>
+                      <li class="active_hotel_dia">
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="col-md-12">
+              <div class="fondo_gris_dormitarios">
+                <div class="row">
+                  <div class="col-md-3 col-sm-3 border_bottom_balnco">
+                    <div class="float_left">
+                      <p>CHIA</p>
+                    </div>
+                    <div class="float_right">
+                      <img src="assets/img/hw-icon.gif">
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="float_right">
+                      <img src="assets/img/money-icon.gif">
+                    </div>
+                  </div>
+                  <div class="col-md-9 col-sm-9 ">
+                    <ul class="input_dormitorios_availabity">
+                      <li class="input_cero_camas">
+                        <input type="text" />
+                      </li>
+                      <li class="input_cero_camas">
+                        <input type="text" />
+                      </li>
+                      <li class="input_cero_camas ">
+                        <input type="text" />
+                      </li>
+                      <li class="input_cero_camas">
+                        <input type="text" />
+                      </li>
+                      <li class="active_hotel_dia input_cero_camas">
+                        <input type="text" />
+                      </li>
+
+                      <li class="active_hotel_dia">
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li class="active_hotel_dia">
+                        <input type="text" />
+                      </li>
+                      <li class="active_hotel_dia">
+                        <input type="text" />
+                      </li>
+                      <li >
+                        <input type="text" />
+                      </li>
+                    </ul>
+
+                    <ul class="input_dormitorios_availabity">
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li class="active_hotel_dia">
+                        <input type="text" />
+                      </li>
+
+                      <li class="active_hotel_dia">
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                      <li class="active_hotel_dia">
+                        <input type="text" />
+                      </li>
+                      <li class="active_hotel_dia">
+                        <input type="text" />
+                      </li>
+                      <li>
+                        <input type="text" />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+
+  <section class="container-fluid fondo_azul_footer_ayuda">
+    <section class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h2>¿Necesitas ayuda?</h2>
+          <h1><i class="fa fa-phone" aria-hidden="true"></i> +57 300 553 7083</h1>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <section class="container-fluid footer_administrador">
+    <section class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-3">
+          <img src="assets/img/Nextryp-logo-2-02.png">
+          <p>Somos un portal dedicado a comunicar a los hostales con sus clientes potenciales.</p>
+          <ul class="redes_sociales_footer_administrador">
+            <a href="#"><li><i class="fa fa-facebook-square" aria-hidden="true"></i></li></a>
+            <a href="#"><li><i class="fa fa-twitter-square" aria-hidden="true"></i></li></a>
+            <a href="#"><li><i class="fa fa-google-plus-square" aria-hidden="true"></i></li></a>
+            <a href="#"><li><i class="fa fa-linkedin-square" aria-hidden="true"></i></li></a>
+          </ul>
+        </div>
+
+        <div class="col-md-3 col-sm-3">
+          <h5>Hostales</h5>
+          <ul>
+            <a href="#"><li>Bogotá</li></a>
+            <a href="#"><li>Medellín</li></a>
+            <a href="#"><li>Ciudad de México</li></a>
+            <a href="#"><li>Piura</li></a>
+            <a href="#"><li>Buenos aires</li></a>
+            <a href="#"><li>Rio de janeiro</li></a>
+          </ul>
+        </div>
+
+
+        <div class="col-md-3 col-sm-3">
+          <h5>Nosotros</h5>
+          <ul>
+            <a href="#"><li>Términos y condiciones</li></a>
+            <a href="#"><li>Preguntas frecuentes</li></a>
+            <a href="#"><li>Servicio al cliente</li></a>
+            <a href="#"><li>Políticas de privacidad</li></a>
+          </ul>
+        </div>
+
+        <div class="col-md-3 col-sm-3">
+          <h5>Contáctanos</h5>
+          <input type="text" placeholder="Nombre" />
+          <input type="text" placeholder="E-mail" />
+          <textarea placeholder="Mensaje"></textarea>
+          <button>Enviar</button>
+        </div>
+
+
+      </div>
+    </section>
+  </section>
+
+</body>
+
+</html>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.min.js"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.js"></script>
+
+<script>
+
+  jQuery( document ).ready(function($) {
+
+    x = $(".backtotop");
+
+    $("#sticker").sticky({
+      topSpacing:0,
+    });
+
+    $('select').select2();
+
+    $(".lblcount").text("500 carácteres restantes.");
+
+    var scrollPos = $(window).scrollTop();
+    if(scrollPos > 100){
+      x.removeClass("bounceOutDown").addClass("bounceInUp");
+    } else {
+      x.removeClass("bounceInUp").addClass("bounceOutDown");
+    }
+
+    window.onscroll = function (e) {  
+      var scrollPos = $(window).scrollTop();
+
+      if(scrollPos > 100){
+        x.removeClass("bounceOutDown").addClass("bounceInUp");
+      } else {
+        x.removeClass("bounceInUp").addClass("bounceOutDown");
+      }
+
+    }
+
+    $(".backtotop").on("click", function(){
+      $("html, body").animate({ scrollTop: "0px" });
+    });
+
+  });
+
+  function countChar(val, label){
+    len = val.value.length;
+    if (len >= 500) {
+      val.value = val.value.substring(0, 500);
+    } else {
+      document.getElementById(label).innerHTML = (500 - len) + " carácteres restantes.";
+    }
+  }
+
+
+
+</script>
